@@ -16,7 +16,20 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
 
-
+TEAM_VendeurDArmes = DarkRP.createJob("Vendeur d'armes", {
+color = Color(200, 110, 20, 255),
+model = {"models/ninja/vaas.mdl" },
+description = [[Vous vendez tout types d'armes.]],
+weapons = {"fas2_glock20"},
+command = "VendeurDarmes",
+max = 3,
+salary = 1350 ,
+admin = 0,
+vote = false,
+hasLicense = true,
+CanPlayerSuicide = function(ply) return false end,
+candemote = true,
+})
 
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
